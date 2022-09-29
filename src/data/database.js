@@ -12,7 +12,7 @@ import road from '../assets/wallpapers/highRes/10_road.jpg';
 import valley from '../assets/wallpapers/highRes/11_valley.jpg';
 import train from '../assets/wallpapers/highRes/12_train.jpg';
 // database
-export default {
+const database = {
 	themePath: [
 		null,
 		sunset,
@@ -187,3 +187,5 @@ export default {
 		enrolmentAge: 4210,
 	},
 };
+
+export default database;

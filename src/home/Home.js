@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import homelogo from '../assets/img/homelogo.png';
 import './Home.css';

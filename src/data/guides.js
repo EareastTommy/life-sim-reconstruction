@@ -2,7 +2,7 @@
 // ? for single word -- use the first 3 character, e.g title: "copyright" => id: "cop"
 // ? for multiple words -- use the first 3 word's first character, e.g title: "how to play the game" => id: "htp"
 // ? if any repeat occurs, put the two property NEXT TO EACH OTHER and then INDEX them AFTER their id, e.g {title: "how to play the piano", id: "htp0"}, {title: "how to play the game", id: "htp1"}
-export default [
+const guides = [
 	{
 		id: 'int',
 		title: 'introduction',
@@ -102,3 +102,5 @@ export default [
 			unixtodate.js(U) – Allows users to convert from unix date to dd/ mm / yyyy date.Support may be added for other date formats(such as mm / dd / yyyy or yy.mm.dd) soon!`,
 	},
 ];
+
+export default guides;
