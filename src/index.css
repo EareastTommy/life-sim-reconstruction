@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+	--black-25: rgba(0, 0, 0, 0.25);
+	--black-75: rgba(0, 0, 0, 0.75);
+	--white-25: rgba(255, 255, 255, 0.25);
+	--white-75: rgba(255, 255, 255, 0.75);
+	--space-small: 0.4rem;
+	--space-medium: 0.8rem;
+	--space-large: 1.2rem;
+}
+
+/* global */
+* {
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Likely future */
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+p {
+	-webkit-user-select: text; /* Chrome all / Safari all */
+	-moz-user-select: text; /* Firefox all */
+	-ms-user-select: text; /* IE 10+ */
+	user-select: text; /* Likely future */
+}
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.5);
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: clamp(1.4rem, 5vw, 3rem);
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Open Sans', 'Segoe UI', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: var(--space-large);
+	background-color: #111111;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-width: 480px;
+	overflow-x: hidden;
+}
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+.container-global {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1366px;
+	height: 100%;
+	justify-content: space-evenly;
+}
+
+.logo {
+	width: clamp(20rem, 34vw, 32rem);
+	object-fit: contain;
+}
+/* global button styles */
+.btn {
+	border: none;
+	border-radius: 0.6em;
+	background-image: linear-gradient(
+		140deg,
+		rgba(255, 128, 128, 1) 0%,
+		rgba(255, 108, 108, 1) 36%,
+		rgba(255, 0, 0, 1) 58%,
+		rgba(255, 0, 0, 1) 100%
+	);
+	padding: var(--space-medium);
+	font-size: clamp(0.8rem, 2.8vw, 1.4rem);
+	cursor: pointer;
+}
