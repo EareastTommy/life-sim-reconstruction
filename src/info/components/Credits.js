@@ -8,6 +8,7 @@ const Credits = () => {
 			<div className="container-credit">
 				{creditsKeys.map((creditFor) => (
 					<CreditDisplay
+						key={creditFor}
 						creditFor={creditFor}
 						creditArray={credits[creditFor]}
 					/>
@@ -24,7 +25,7 @@ const CreditDisplay = ({ creditFor, creditArray }) => {
 			<h4>{creditFor}</h4>
 			<div>
 				{creditArray.map((credit) => (
-					<span>
+					<span key={credit.name}>
 						{credit.name} by {credit.author + '\n'}
 					</span>
 				))}

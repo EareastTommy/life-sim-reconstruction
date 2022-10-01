@@ -2,10 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import homelogo from '../assets/img/homelogo.png';
 import './Home.css';
+import { motion } from 'framer-motion';
 
 const Home = () => {
 	return (
-		<>
+		<motion.div
+			className="container-global"
+			initial={{
+				height: 0,
+				x: -1 * window.innerWidth,
+			}}
+			animate={{
+				height: '100%',
+				x: 0,
+				transition: { duration: 0.4 },
+			}}
+			exit={{
+				height: 0,
+				x: window.innerWidth,
+				transition: { duration: 0.4 },
+			}}
+		>
 			<img
 				className="logo"
 				src={homelogo}
@@ -33,7 +50,7 @@ const Home = () => {
 					</li>
 				</ul>
 			</nav>
-		</>
+		</motion.div>
 	);
 };
 
