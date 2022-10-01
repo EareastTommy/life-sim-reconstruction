@@ -15,11 +15,6 @@ header {
 	color: #fff;
 	gap: var(--space-medium);
 }
-@media screen and (min-width: 768px) {
-	.container-main {
-		grid-template-columns: 2fr 1fr;
-	}
-}
 
 .container-guides {
 	display: grid;
@@ -48,16 +43,31 @@ header {
 	background: var(--white-25);
 }
 
-.container-guide {
+.container-guide,
+.container-credits {
 	white-space: pre-line;
-	max-height: 100%;
-	padding: var(--space-small) var(--space-medium);
 	text-align: justify;
-	line-height: 28px;
+	line-height: 4.2vh;
 	background-color: var(--black-75);
 	overflow: auto;
+	padding: var(--space-small) var(--space-medium);
 }
-.container-guide p {
+.container-guide p,
+.container-credit {
 	overflow: visible;
 	height: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.container-main {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+@media screen and (max-width: 768px) {
+	body {
+		height: auto;
+	}
+	.container-credit {
+		height: auto;
+	}
 }

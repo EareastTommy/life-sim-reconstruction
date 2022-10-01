@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header.js';
 import Guides from './components/Guides';
-import Credit from './components/Credit';
+import Credits from './components/Credits';
 import './Info.css';
 
 const Info = () => {
@@ -10,7 +10,7 @@ const Info = () => {
 			<Header title="information" />
 			<main class="container-main">
 				<Guides />
-				<Credit />
+				<Credits />
 			</main>
 		</>
 	);

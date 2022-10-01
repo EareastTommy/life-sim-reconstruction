@@ -45,11 +45,21 @@ a {
 	color: #000;
 }
 h1 {
-	font-size: 2rem;
+	font-size: clamp(1.8rem, 5vw, 4rem);
+	text-transform: uppercase;
 }
 h2 {
-	font-size: clamp(1.4rem, 5vw, 3rem);
+	font-size: clamp(1.4rem, 4vw, 3rem);
 	text-transform: uppercase;
+}
+h3 {
+	font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+	text-transform: uppercase;
+}
+h4 {
+	font-size: clamp(1rem, 1.6vw, 1.4rem);
+	text-transform: capitalize;
+	text-decoration: underline;
 }
 
 body {
@@ -60,9 +70,10 @@ body {
 	background-color: #111111;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 	height: 100vh;
 	min-width: 480px;
-	overflow-x: hidden;
 }
 #root {
 	height: 100%;

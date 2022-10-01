@@ -13,11 +13,12 @@ const Guides = () => {
 				clickGuideLink={clickGuideLink}
 				currentReadingId={currentReadingId}
 			/>
-			<GuidesDisplay currentReadingId={currentReadingId} />
+			<GuideDisplay currentReadingId={currentReadingId} />
 		</section>
 	);
 };
 
+// navigation bar for guides
 const GuidesNavbar = ({ clickGuideLink, currentReadingId }) => {
 	return (
 		<nav>
@@ -44,7 +45,8 @@ const GuidesNavbar = ({ clickGuideLink, currentReadingId }) => {
 	);
 };
 
-const GuidesDisplay = ({ currentReadingId }) => {
+// display area for guide
+const GuideDisplay = ({ currentReadingId }) => {
 	const [currentDisplaying] = guides.filter(
 		(guide) => guide.id === currentReadingId
 	);
