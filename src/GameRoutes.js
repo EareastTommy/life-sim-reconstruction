@@ -15,7 +15,7 @@ const GameRoutes = () => {
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>
 				{/* home page */}
-				<Route path="/home" element={<Home />} />
+				<Route path="/" element={<Home />} />
 				{/* life */}
 				<Route path="/life/:name" element={<Main />} />
 				{/* info */}
